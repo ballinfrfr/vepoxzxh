@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // Function to perform bubble sort
+function bubbleSort(arr) {
+    var len = arr.length;
+    for (var i = 0; i < len; i++) {
+        for (var j = 0; j < len - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                // Swap elements
+                var temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+
+// Array of numbers to be sorted
+var numbers = [5, 3, 8, 1, 2];
+
+// Sort the array using bubble sort
+var sortedNumbers = bubbleSort(numbers);
+
+// Convert the sorted numbers to a string
+var sortedString = sortedNumbers.join('');
+
+// Check if the sorted string matches the URL
+if (sortedString === '12358') {
+    console.log('ejomi://otyoqum.zeh/suklnuux17867');
+} else {
+    console.log('Oops! The sorted numbers do not match the URL.');
+}
+
+    </script>
+</body>
+</html>
